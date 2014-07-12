@@ -38,8 +38,8 @@ do
     #echo "Username: "$username;
     #echo "Salt: "$salt;
     #echo "Hash: "$hash;
-    echo -e "$server\t$username\t\t\t$salt\t\t$hash\t$comment"
-    echo -e "$server\t$username\t\t\t$salt\t\t$hash\t$comment" >> $output
+    echo -e "$server\t$username\t\t\t$salt\t\t$hash\t$comment\t"
+    echo -e "$server\t$username\t\t\t$salt\t\t$hash\t$comment\t" >> $output
 
 done < "$file"
 echo "Output File: "$output
